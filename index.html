@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Bujji</title>
+
+<style>
+
+body{
+    background: linear-gradient(135deg,#ff69b4,#8a2be2);
+    color:white;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    padding:20px;
+}
+
+h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+img{
+    width:280px;
+    border-radius:20px;
+    border:5px solid white;
+    box-shadow:0 0 25px rgba(255,255,255,0.6);
+}
+
+#typing{
+    margin-top:25px;
+    font-size:24px;
+    line-height:1.8;
+    white-space:pre-line;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🎂 Happy Birthday 🎂</h1>
+
+<img src="immages/cbb.jpg.jpeg" alt="Birthday Girl">
+
+<div id="typing"></div>
+
+<script>
+
+const text = `
+✨ HAPPY 18TH BIRTHDAY CHETANA ✨
+
+Today is a very special day,
+because an amazing person was born.
+
+May your life be filled with happiness,
+love, success, and beautiful memories.
+
+Keep smiling 😊
+Keep shining 🌟
+Keep believing in yourself ❤️
+
+"Every year is a new chapter,
+and the best pages are still ahead."
+
+Wishing you endless joy,
+good health, and all the success
+you truly deserve.
+
+🎉 Have a Wonderful Birthday! 🎉
+
+❤️ Best Wishes ❤️
+`;
+
+let i = 0;
+
+function type(){
+    if(i < text.length){
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type,35);
+    }
+}
+
+type();
+
+</script>
+
+</body>
+</html>
